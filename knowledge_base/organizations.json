@@ -1,0 +1,177 @@
+{
+  "techcorp": {
+    "company_info": {
+      "name": "TechCorp Solutions",
+      "industry": "Technology",
+      "size": "100-250 employees",
+      "location": "San Francisco, CA",
+      "founded_year": 2018,
+      "website": "https://techcorp.com",
+      "description": "Innovative technology company focused on AI and machine learning solutions."
+    },
+    "culture": {
+      "mission": "To democratize AI technology and make it accessible to businesses of all sizes.",
+      "vision": "To be the leading provider of AI-powered business solutions worldwide.",
+      "values": ["Innovation", "Collaboration", "Excellence", "Integrity", "Customer Focus"],
+      "work_style": "Collaborative and fast-paced",
+      "diversity_inclusion": "Committed to building a diverse and inclusive workplace",
+      "work_life_balance": "Flexible work arrangements and generous time-off policies"
+    },
+    "benefits": {
+      "health_insurance": "Comprehensive health, dental, and vision coverage",
+      "retirement_plans": "401(k) with company match up to 6%",
+      "paid_time_off": "Unlimited PTO with 15 paid holidays",
+      "flexible_work": "Hybrid work model with remote options",
+      "professional_development": "Annual learning budget and conference attendance",
+      "additional_benefits": ["Stock options", "Free lunch", "Gym membership", "Mental health support"]
+    },
+    "salary_ranges": {
+      "entry_level": {
+        "software engineer": "$80,000 - $100,000",
+        "data scientist": "$85,000 - $110,000",
+        "product manager": "$90,000 - $120,000",
+        "marketing manager": "$70,000 - $90,000",
+        "sales representative": "$60,000 - $80,000"
+      },
+      "mid_level": {
+        "software engineer": "$110,000 - $140,000",
+        "data scientist": "$120,000 - $150,000",
+        "product manager": "$130,000 - $160,000",
+        "marketing manager": "$90,000 - $120,000",
+        "sales representative": "$80,000 - $110,000"
+      },
+      "senior_level": {
+        "software engineer": "$140,000 - $180,000",
+        "data scientist": "$150,000 - $190,000",
+        "product manager": "$160,000 - $200,000",
+        "marketing manager": "$120,000 - $150,000",
+        "sales representative": "$110,000 - $140,000"
+      },
+      "executive_level": {
+        "engineering manager": "$180,000 - $250,000",
+        "director of data science": "$200,000 - $280,000",
+        "vp of product": "$220,000 - $300,000",
+        "vp of marketing": "$200,000 - $280,000",
+        "vp of sales": "$200,000 - $300,000"
+      }
+    },
+    "departments": [
+      {
+        "name": "Engineering",
+        "description": "Core development team building AI-powered products",
+        "typical_roles": ["Software Engineer", "DevOps Engineer", "QA Engineer", "Frontend Developer", "Backend Developer"],
+        "growth_opportunities": "Technical leadership, architecture roles, team management",
+        "team_size": "50-75 engineers"
+      },
+      {
+        "name": "Data Science",
+        "description": "AI/ML research and development team",
+        "typical_roles": ["Data Scientist", "ML Engineer", "Data Engineer", "Research Scientist"],
+        "growth_opportunities": "Research leadership, model architecture, AI strategy",
+        "team_size": "20-30 data scientists"
+      },
+      {
+        "name": "Product",
+        "description": "Product strategy and management team",
+        "typical_roles": ["Product Manager", "Product Designer", "UX Researcher", "Product Analyst"],
+        "growth_opportunities": "Product leadership, strategy roles, executive positions",
+        "team_size": "15-25 product professionals"
+      },
+      {
+        "name": "Marketing",
+        "description": "Marketing and growth team",
+        "typical_roles": ["Marketing Manager", "Content Marketing", "Digital Marketing", "Growth Marketing"],
+        "growth_opportunities": "Marketing leadership, brand management, growth strategy",
+        "team_size": "10-15 marketing professionals"
+      }
+    ],
+    "tech_stack": ["Python", "JavaScript", "React", "Node.js", "TensorFlow", "PyTorch", "AWS", "Docker", "Kubernetes"],
+    "tools_platforms": ["GitHub", "Jira", "Slack", "Notion", "Figma", "Tableau", "DataDog"],
+    "certifications_preferred": ["AWS Certified", "Google Cloud Professional", "PMP", "Scrum Master", "TensorFlow Developer"],
+    "last_updated": "2024-08-20T18:21:00"
+  },
+  "startup_innovate": {
+    "company_info": {
+      "name": "Startup Innovate",
+      "industry": "Technology Startup",
+      "size": "20-50 employees",
+      "location": "Austin, TX",
+      "founded_year": 2022,
+      "website": "https://startupinnovate.com",
+      "description": "Fast-growing startup revolutionizing e-commerce with cutting-edge technology."
+    },
+    "culture": {
+      "mission": "To transform how people shop online through innovative technology and exceptional user experiences.",
+      "vision": "To become the most trusted and innovative e-commerce platform globally.",
+      "values": ["Innovation", "Speed", "Customer Obsession", "Transparency", "Growth Mindset"],
+      "work_style": "Fast-paced, entrepreneurial, and results-driven",
+      "diversity_inclusion": "Building an inclusive team that reflects our diverse customer base",
+      "work_life_balance": "Flexible hours with focus on results over time spent"
+    },
+    "benefits": {
+      "health_insurance": "Premium health and dental coverage",
+      "retirement_plans": "Simple IRA with company contributions",
+      "paid_time_off": "Flexible PTO policy",
+      "flexible_work": "Remote-first with optional office access",
+      "professional_development": "Learning stipend and conference budget",
+      "additional_benefits": ["Equity participation", "Home office setup", "Wellness stipend", "Team retreats"]
+    },
+    "salary_ranges": {
+      "entry_level": {
+        "software engineer": "$70,000 - $90,000",
+        "data scientist": "$75,000 - $95,000",
+        "product manager": "$80,000 - $100,000",
+        "marketing manager": "$60,000 - $80,000",
+        "sales representative": "$50,000 - $70,000"
+      },
+      "mid_level": {
+        "software engineer": "$90,000 - $120,000",
+        "data scientist": "$100,000 - $130,000",
+        "product manager": "$110,000 - $140,000",
+        "marketing manager": "$80,000 - $100,000",
+        "sales representative": "$70,000 - $90,000"
+      },
+      "senior_level": {
+        "software engineer": "$120,000 - $160,000",
+        "data scientist": "$130,000 - $170,000",
+        "product manager": "$140,000 - $180,000",
+        "marketing manager": "$100,000 - $130,000",
+        "sales representative": "$90,000 - $120,000"
+      },
+      "executive_level": {
+        "engineering manager": "$150,000 - $200,000",
+        "director of data science": "$170,000 - $220,000",
+        "vp of product": "$180,000 - $250,000",
+        "vp of marketing": "$160,000 - $220,000",
+        "vp of sales": "$170,000 - $250,000"
+      }
+    },
+    "departments": [
+      {
+        "name": "Engineering",
+        "description": "Full-stack development team building scalable e-commerce solutions",
+        "typical_roles": ["Software Engineer", "Full Stack Developer", "DevOps Engineer", "Mobile Developer"],
+        "growth_opportunities": "Technical lead roles, architecture decisions, startup equity growth",
+        "team_size": "15-25 engineers"
+      },
+      {
+        "name": "Product",
+        "description": "Product development and user experience team",
+        "typical_roles": ["Product Manager", "UX Designer", "Product Analyst", "Growth PM"],
+        "growth_opportunities": "Product leadership, user research, growth strategy",
+        "team_size": "5-10 product team members"
+      },
+      {
+        "name": "Marketing",
+        "description": "Growth marketing and brand building team",
+        "typical_roles": ["Marketing Manager", "Growth Marketer", "Content Creator", "Social Media Manager"],
+        "growth_opportunities": "Marketing leadership, brand strategy, growth hacking",
+        "team_size": "3-8 marketing professionals"
+      }
+    ],
+    "tech_stack": ["React", "Node.js", "Python", "PostgreSQL", "Redis", "AWS", "Docker", "GraphQL"],
+    "tools_platforms": ["GitHub", "Linear", "Slack", "Figma", "Mixpanel", "Stripe", "Vercel"],
+    "certifications_preferred": ["AWS Solutions Architect", "Google Analytics", "Facebook Blueprint", "Shopify Partner"],
+    "last_updated": "2024-08-20T18:21:00"
+  }
+}

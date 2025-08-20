@@ -1,0 +1,29 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated job descriptions
+job_description_*.md
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/

@@ -1,0 +1,58 @@
+{
+  "tech_company": {
+    "culture_keywords": [
+      "innovative",
+      "fast-paced",
+      "collaborative",
+      "growth-oriented"
+    ],
+    "benefits_emphasis": [
+      "flexible work",
+      "professional development",
+      "health benefits"
+    ],
+    "tech_focus": true
+  },
+  "startup": {
+    "culture_keywords": [
+      "dynamic",
+      "entrepreneurial",
+      "flexible",
+      "impact-driven"
+    ],
+    "benefits_emphasis": [
+      "equity",
+      "flexible hours",
+      "remote work"
+    ],
+    "tech_focus": true
+  },
+  "enterprise": {
+    "culture_keywords": [
+      "stable",
+      "professional",
+      "structured",
+      "career growth"
+    ],
+    "benefits_emphasis": [
+      "comprehensive benefits",
+      "retirement plans",
+      "professional development"
+    ],
+    "tech_focus": false
+  },
+  "non_profit": {
+    "culture_keywords": [
+      "mission-driven",
+      "collaborative",
+      "meaningful work",
+      "community-focused"
+    ],
+    "benefits_emphasis": [
+      "work-life balance",
+      "meaningful impact",
+      "flexible arrangements"
+    ],
+    "tech_focus": false
+  }
+}
