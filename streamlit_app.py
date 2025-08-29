@@ -11,8 +11,7 @@ load_dotenv()
 st.set_page_config(
 	page_title="Job Description Agent",
 	page_icon="🤖",
-	layout="wide",
-	initial_sidebar_state="expanded"
+	layout="wide"
 )
 
 # Custom CSS for better styling
@@ -76,50 +75,27 @@ def main():
 	st.markdown('<h1 class="main-header">🤖 Job Description Agent</h1>', unsafe_allow_html=True)
 	st.markdown('<p class="sub-header">Generate comprehensive job descriptions from simple inputs using AI</p>', unsafe_allow_html=True)
 	
-	# Sidebar
-	with st.sidebar:
-		st.header("⚙️ Configuration")
-		
-		# API Key input
-		api_key = st.text_input(
-			"OpenAI API Key",
-			type="password",
-			help="Enter your OpenAI API key to use the service"
-		)
-		
-		if api_key:
-			os.environ["OPENAI_API_KEY"] = api_key
-		
-		# Model selection
-		model_name = st.selectbox(
-			"Model",
-			["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"],
-			help="Choose the OpenAI model to use"
-		)
-		
-		# Temperature slider
-		temperature = st.slider(
-			"Creativity Level",
-			min_value=0.0,
-			max_value=1.0,
-			value=0.7,
-			step=0.1,
-			help="Higher values make output more creative, lower values make it more focused"
-		)
-		
-		st.markdown("---")
-		st.markdown("### 📚 Examples")
-		st.markdown("Try these inputs:")
-		examples = [
-			"web developer with 5 years experience",
-			"senior data scientist",
-			"marketing manager entry level",
-			"software engineer remote",
-			"product manager fintech"
-		]
-		
-		for example in examples:
-			if st.button(example, key=example):
+	# Set default configuration values
+	api_key = os.getenv("OPENAI_API_KEY", "")
+	model_name = "gpt-4o-mini"  # Default model
+	temperature = 0.7  # Default creativity level
+	
+	# Quick examples section
+	st.markdown("### 📚 Quick Examples")
+	st.markdown("Click any example to use it:")
+	
+	col1, col2, col3, col4, col5 = st.columns(5)
+	examples = [
+		"web developer with 5 years experience",
+		"senior data scientist",
+		"marketing manager entry level",
+		"software engineer remote",
+		"product manager fintech"
+	]
+	
+	for i, example in enumerate(examples):
+		with [col1, col2, col3, col4, col5][i]:
+			if st.button(example, key=example, use_container_width=True):
 				st.session_state.job_input = example
 				st.rerun()
 	
@@ -184,8 +160,7 @@ def main():
 			"✅ Salary expectations",
 			"✅ Company culture",
 			"✅ Benefits package",
-			"✅ Export to Markdown",
-			"✅ Upload to Google Docs"
+			"✅ Export to Markdown"
 		]
 		
 		for feature in features:
@@ -195,8 +170,9 @@ def main():
 	
 	# Generate job description
 	if generate_button and job_input:
-		if not os.getenv("OPENAI_API_KEY"):
-			st.error("❌ Please enter your OpenAI API key in the sidebar to continue.")
+		if not api_key:
+			st.error("❌ OpenAI API key not found. Please set the OPENAI_API_KEY environment variable or add it to your .env file.")
+			st.info("💡 Create a .env file in the project root with: OPENAI_API_KEY=your_api_key_here")
 			return
 		
 		try:
@@ -225,18 +201,7 @@ def main():
 						mime="text/markdown"
 					)
 					
-					# Google Docs upload
-					st.markdown("---")
-					st.subheader("Upload to Google Docs")
-					st.caption("First time requires Google sign-in; place OAuth 'credentials.json' in project root.")
-					if st.button("🔗 Upload to Google Docs"):
-						try:
-							from google_docs import upload_job_description_to_google_doc
-							doc_url = upload_job_description_to_google_doc(job_desc.job_title, formatted_output)
-							st.success(f"Uploaded! Open the document: {doc_url}")
-						except Exception as e:
-							st.error(f"Upload failed: {e}")
-					
+
 					st.markdown("</div>", unsafe_allow_html=True)
 				else:
 					st.error("❌ Failed to generate job description. Please try again.")
